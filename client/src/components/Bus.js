@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 
 const Bus = ({bus}) => {
+  console.log(bus)
     const navigate = useNavigate();
     return (
-      <div className="card p-2">
+     <>
+        <div className="card p-2">
         <h1 className="text-lg primary-text">{bus.name}</h1>
         <hr />
         <div className="d-flex justify-content-between">
@@ -36,6 +38,9 @@ const Bus = ({bus}) => {
           }}>Book Now</h1>
         </div>
       </div>
+      
+     </>
+     
     );
 }
 
